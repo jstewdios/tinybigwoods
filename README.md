@@ -25,3 +25,9 @@ Forms inside App Router aren’t auto-detected by plugin v5. This project includ
 - The on-page React form posts to `/__forms.html` (`application/x-www-form-urlencoded`), then redirects to `/thanks`
 
 If you need to bypass the verification temporarily, you can set `NETLIFY_NEXT_VERIFY_FORMS=false` in Netlify env (not recommended long term).
+
+
+## Stripe Payment Link (optional)
+Set `NEXT_PUBLIC_STRIPE_PAYMENT_LINK` in your Netlify environment to a Stripe **Payment Link** URL (e.g., https://buy.stripe.com/...). When present, the site will:
+- Open the payment link in a new tab after a successful form submit, and
+- Show a **Pay $20 Deposit** button on the thanks page.

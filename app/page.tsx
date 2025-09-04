@@ -81,7 +81,7 @@ export default function Page() {
               Join the first batch and help shape the collection. Your deposit is fully refundable any time before we begin carving.
             </p>
             <ul className="mt-4 space-y-2 text-white/80">
-              <li>• Indicative price range: <span className="font-semibold">$149–$349</span> based on size & options</li>
+              <li>• Early-bird pricing: <span className="font-semibold">$149–$349</span> (size & options)</li>
               <li>• Early adopter discount for presale customers</li>
               <li>• We’ll confirm your text, style, and finish before production</li>
             </ul>

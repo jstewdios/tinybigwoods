@@ -10,8 +10,15 @@ export default function PresaleForm() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(data as any).toString(),
     });
-    if (res.ok) window.location.href = "/thanks";
-    else alert("Something went wrong. Please try again.");
+    if (res.ok) {
+      const link = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK;
+      if (link) {
+        try { window.open(link, "_blank"); } catch(e) {}
+      }
+      window.location.href = "/thanks";
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
   }
 
   return (

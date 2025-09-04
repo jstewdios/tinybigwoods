@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="36" viewBox="0 0 120 36" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="120" y2="36">
+      <stop offset="0" stop-color="#B45309"/>
+      <stop offset="1" stop-color="#D6AD60"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="18" cy="18" r="12" stroke="url(#g)" stroke-width="2" fill="none"/>
+    <circle cx="18" cy="18" r="6" stroke="url(#g)" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M18 6 L18 30" stroke="url(#g)" stroke-width="1.5" opacity="0.6"/>
+    <text x="40" y="24" font-family="Inter, ui-sans-serif, system-ui" font-size="16" font-weight="700" fill="white">Tiny Big Woods</text>
+  </g>
+</svg>
