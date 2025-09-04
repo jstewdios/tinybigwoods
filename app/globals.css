@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 15 15 12;   /* warm dark */
+  --card: 23 21 18;
+}
+
+body { @apply bg-[rgb(var(--bg))] text-white antialiased; }
+.container { @apply mx-auto max-w-6xl px-6; }
+
+.wood-gradient {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(212,163,115,0.20), transparent 70%),
+    radial-gradient(800px 400px at 0% 10%, rgba(148,163,184,0.15), transparent 70%);
+}
+
+.card { @apply rounded-2xl border border-white/10 bg-[rgb(var(--card))] shadow-glow; }
+
+/* subtle wood grain overlay */
+.woodgrain:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" opacity="0.05" viewBox="0 0 200 200"><filter id="f"><feTurbulence type="fractalNoise" baseFrequency="0.004" numOctaves="3" /></filter><rect width="100%" height="100%" filter="url(%23f)" /></svg>');
+  background-size: cover;
+  pointer-events: none;
+}
